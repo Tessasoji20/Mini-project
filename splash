@@ -9,7 +9,7 @@ class MyApp extends StatelessWidget {
       title: 'Flutter App',
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        body: YourTextButtonWidget(), // Replace with your TextButton widget
+        body: YourTextButtonWidget(),
       ),
     );
   }
@@ -23,15 +23,15 @@ class YourTextButtonWidget extends StatelessWidget {
       style: TextButton.styleFrom(padding: EdgeInsets.zero),
       child: Container(
         width: double.infinity,
-        height: 800, // Set your desired height
+        height: 800,
         decoration: BoxDecoration(
           color: Color(0xff30303b),
         ),
         child: Stack(
           children: [
             Positioned(
-              left: 68,
-              top: 457,
+              left: 60,
+              top: 427, // Adjusted top value
               child: Align(
                 child: SizedBox(
                   width: 223,
@@ -40,8 +40,8 @@ class YourTextButtonWidget extends StatelessWidget {
                     'Pomegranate',
                     textAlign: TextAlign.center,
                     style: TextStyle(
-                      fontSize: 50,
-                      fontWeight: FontWeight.w400,
+                      fontSize: 35,
+                      fontWeight: FontWeight.w800,
                       color: Color(0xfffa4645),
                     ),
                   ),
@@ -49,14 +49,14 @@ class YourTextButtonWidget extends StatelessWidget {
               ),
             ),
             Positioned(
-              left: 57,
-              top: 251,
+              left: 50,
+              top: 221, // Adjusted top value
               child: Align(
                 child: SizedBox(
                   width: 246,
                   height: 255,
                   child: Image.network(
-                    '[Image url]', // Replace with your image URL
+                    'https://png.pngtree.com/png-vector/20220709/ourmid/pngtree-half-of-pomegranate-icon-png-image_5592439.png',
                     fit: BoxFit.cover,
                   ),
                 ),
